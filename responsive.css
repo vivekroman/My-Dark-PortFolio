@@ -1,0 +1,366 @@
+@media(max-width:991px) {
+  .header {
+      padding: 2vw 5vw 0vw 5vw;
+  }
+
+  .header .flex a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 5vw;
+  }
+
+  #menu-btn {
+      display: inline-block;
+      -webkit-transition: .2s linear;
+      -o-transition: .2s linear;
+      transition: .2s linear;
+  }
+
+  #menu-btn.fa-times {
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg);
+  }
+
+  .header .flex {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+  }
+
+  .header .flex .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+              clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      -webkit-transition: .2s linear;
+      -o-transition: .2s linear;
+      transition: .2s linear;
+  }
+
+  .header .flex .navbar.active {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      background: var(--black);
+      display: inline-block;
+      text-align: center;
+      margin-top: 1px;
+  }
+
+  .header .flex .navbar a {
+      display: block;
+      margin: 2rem;
+  }
+
+  /* ////////////////////////////////header section /////////////////////////////////////////// */
+  .home {
+      padding: 13vw 5vw 0vw 5vw;
+  }
+
+  .home_content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-top: 2vw;
+  }
+
+  .hero_left {
+      width: 100%;
+      text-align: center;
+  }
+  .hero_left .hero_left_text p {
+    margin-top: 2vw;
+    font-size: 1em;
+    color: var(--text);
+  }
+  .hero_left_arrow {
+      font-size: 7vw;
+      margin-top: 2vw;
+      color: var(--title);
+  }
+
+  .hero_right {
+      width: 100%;
+  }
+
+  .hero_right .hero_right_btn {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-top: 8vw;
+  }
+
+  .hero_right .hero_right_btn a {
+      text-decoration: none;
+      font-family: 'Borel', cursive;
+      font-size: 8vw;
+      border-bottom: 1px solid #3e3c3c;
+      color: var(--text);
+  }
+
+  .heading {
+      font-size: 11vw;
+      color: var(--title);
+      font-weight: 800;
+  }
+
+  /* ............................ about section start.....................  */
+  .about {
+      padding: 8vw 5vw 5vw 5vw;
+  }
+
+  .about_content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+  }
+
+  /* ............................ about section end .....................  */
+  /* ............................ project section start .....................  */
+  .project{
+          padding: 3vw 5vw 0vw 5vw;
+        }
+  
+  .project_container .heading {
+      font-size: 11vw;
+      color: var(--title);
+      font-weight: 800;
+  }
+
+  .project_container h1 {
+      margin-top: 3vw;
+      font-size: 5vw;
+  }
+  .project .project_content{
+      width: 98%;
+      gap: 3vw;
+ }
+  .project .project_content {
+      gap: 2vw;
+  }
+
+  .project .project_content .project_item {
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+  }
+/* ............................ project section end .....................  */
+/* ............................ skills section start .....................  */
+  .skills {
+      padding: 10vw 4vw 5vw 4vw;
+  }
+
+  .skills h2 {
+      font-size: 5vw;
+      color: var(--text);
+      text-align: center;
+  }
+
+  .skills h2>span {
+      color: #38CDFA;
+  }
+
+  .skills .skills_content>i {
+      font-size: 8vw;
+      -webkit-transition: 0.6s ease;
+      -o-transition: 0.6s ease;
+      transition: 0.6s ease;
+  }
+/* ............................ skills section end .....................  */
+  /* ............1111 */
+  .contact {
+      padding:5vw;
+  }
+
+  .contact h1 {
+      font-size: 7vw;
+      text-align: center;
+      margin-bottom: 3vw;
+  }
+
+  .contact p {
+      text-align: center;
+      font-size: 3vw;
+      color: var(--text);
+  }
+  .top_btn i{
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+      font-size: 7vw;
+      color: #F6BA53;
+    }
+}
+
+/* ///////////////////////////////////mobile device code ............................... //////////////////////  */
+
+
+@media(max-width:425px) {
+  .heading {
+      font-size: 15vw;
+      color: var(--title);
+      font-weight: 800;
+    }
+  .header {
+    padding: 5vw 4vw 0vw 4vw;
+  }
+  .header .flex .navbar.active {
+    margin-top: 40px;
+}
+  .header .flex a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 5vw;
+  }
+
+  /* header section  */
+  .home{
+      padding:20vw 4vw 4vw 4vw;
+  }
+
+  .hero_left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero_left .hero_left_text h2 {
+    font-size: 2.5em;
+    color: var(--text);
+  }
+
+  .hero_left .hero_left_text h3 {
+    font-size: 2em;
+    color: var(--text);
+  }
+
+  .hero_right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero_right_btn a {
+    font-size: 1.5rem;
+  }
+ /* ....................................... about section start ................  */
+.about{
+  padding: 5vw 3vw 2vw 3vw;
+}
+.about_content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about_content h2 {
+  font-size: 8vw;
+  color: var(--text);
+}
+
+.about_content p {
+  color: var(--text);
+  font-size: 1rem;
+}
+/* ....................................... about section end ................  */
+ 
+/* ....................................... project section start ................  */
+.project{
+  padding: 0vw 3vw 5vw 3vw;
+}
+.project_container{
+  padding: 3vw;
+}
+.project_container h1{
+  color: var(--text);
+  font-weight: 500;
+}
+.project_container h1>span{
+    color: #F6BA53;
+}
+.project .project_content{
+     width: 90%;
+    margin: 0 auto;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -ms-flex-wrap: wrap;
+         flex-wrap: wrap;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+     gap: 2vw;
+}
+.project .project_content .project_item{
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border: 4px solid var(--title);
+}
+.project .project_content .project_item img{
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transition: 0.7s ease all;
+  -o-transition: 0.7s ease all;
+  transition: 0.7s ease all;
+}
+.project .project_content .project_item:hover img{
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+  .skills{
+    padding: 5vw 4vw 10vw 4vw;
+  }
+  
+  .skills .heading{
+    font-size: 20vw;
+  }
+  
+  .skills h2{
+    font-size: 7vw;
+  }
+  .skills h2>span{
+    color: #38CDFA;
+  }
+
+  .skills .skills_content>i{
+    font-size: 12vw;
+    -webkit-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+    transition: 0.6s ease;
+  }
+  .contact{
+    padding: 5vw 2w 15vw 2vw;
+  }
+  .contact h1{
+    font-size: 7vw;
+    text-align: center;
+    margin-bottom: 3vw;
+  }
+  .contact p{
+    text-align: center;
+    font-size: 4vw;
+    margin-bottom: 3rem;
+  }
+  .top_btn i{
+      position: absolute;
+      right: 20px;
+      bottom: 30px;
+      font-size: 8vw;
+      color: #F6BA53;
+    }
+}
